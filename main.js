@@ -71,8 +71,8 @@ $("button").click(function prjection(){onChangeProjection(this);})
 
 function onChangeProjection(e) {
   const currentView = map.getView();
-  const currentProjection = currentView.get();
-  // const currentProjection = ol.proj.get(currentView.o.hb);
+//   const currentProjection = currentView.get();
+  const currentProjection = ol.proj.get(currentView.o.hb);
   console.log(currentView);
   const newProjection = ol.proj.get(e.value);
   const currentResolution = currentView.getResolution();
