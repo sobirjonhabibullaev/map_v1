@@ -1,0 +1,30 @@
+.section {
+    display: flex;
+    height: 97vh;
+}
+.left {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+}
+.right {
+    flex: 1;
+    border: 1px solid #f1f1f1;
+}
+.left-sections {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+#mouse-position{
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+    z-index: 10;
+}
+.custom-mouse-position{
+    color:white;
+}
+button:hover{
+    cursor: pointer;
+}

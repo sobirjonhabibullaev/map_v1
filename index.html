@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Openlayers</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://openlayers.org/en/v3.20.1/css/ol.css" type="text/css">
+    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+    <script src="https://openlayers.org/en/v3.20.1/build/ol.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.15/proj4.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="section">
+        <div class="left">
+            <div class="top left-sections">
+                <h4>Layer</h4>
+                <button id="espg_3857" type="button" value="EPSG:3857">3857</button>
+                <button id="espg_4326" type="button" value="EPSG:4326">4326</button>
+            </div>
+            <div class="middle left-sections">
+                <h4>Scale Unit Option</h4>
+                <select id="units">
+                    <option value="degrees">degrees</option>
+                    <option value="imperial">imperial inch</option>
+                    <option value="us">us inch</option>
+                    <option value="nautical">nautical mile</option>
+                    <option value="metric" selected>metric</option>
+                </select>
+            </div>
+            <div class="bottom left-sections"></div>
+            
+        </div>
+        <div class="right">
+            <div id="map" class="map" tabindex="0"></div>
+            <div id="mouse-position"></div>
+        </div>
+        
+
+    </div>
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/elm-pep@1.0.6/dist/elm-pep.js"></script> -->
+    
+    <script src="./lib/v6.15.1-dist/v6.15.1-dist/ol.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
